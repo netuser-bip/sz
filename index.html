@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaMusic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        section {
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SaMusic</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showContent('products')">Conheça nossos produtos</a>
+        <a href="#" onclick="showContent('about')">Quem somos nós</a>
+        <a href="#" onclick="showContent('contact')">Fale conosco</a>
+    </nav>
+
+    <section id="content">
+        <!-- Conteúdo inicial, pode ser um banner ou algo similar -->
+        <h2>Bem-vindo à SaMusic</h2>
+        <p>Escolha uma opção no menu para saber mais sobre nós.</p>
+    </section>
+
+    <script>
+        function showContent(option) {
+            var contentSection = document.getElementById('content');
+            switch (option) {
+                case 'products':
+                    contentSection.innerHTML = '<h2>Conheça nossos produtos</h2><p>Aqui estão nossos incríveis produtos musicais.</p>';
+                    break;
+                case 'about':
+                    contentSection.innerHTML = '<h2>Quem somos nós</h2><p>Somos a SaMusic, sua loja de confiança para artigos musicais.</p>';
+                    break;
+                case 'contact':
+                    contentSection.innerHTML = '<h2>Fale conosco</h2><p>Entre em contato conosco para obter mais informações.</p>';
+                    break;
+                default:
+                    contentSection.innerHTML = '<h2>Bem-vindo à SaMusic</h2><p>Escolha uma opção no menu para saber mais sobre nós.</p>';
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
