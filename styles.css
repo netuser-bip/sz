@@ -39,7 +39,6 @@ body {
   
   header {
     width: auto;
-    align-items: center;
   }
 
   h1 {
@@ -47,8 +46,8 @@ body {
     background-color: #6ea4c9;
     color: #ecf0f1;
     text-align: center;
-    padding: 12rem;
-    width: 20%;
+    padding: 2rem;
+    width: 70%;
   }
 
   h2 img {
